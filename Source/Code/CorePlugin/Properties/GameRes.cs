@@ -6,8 +6,10 @@
 namespace GameRes
 {
 	public static class Data {
+		public static Duality.ContentRef<ScriptingPlugin.Resources.FSharpScript> Anoter_FSharpScript { get { return Duality.ContentProvider.RequestContent<ScriptingPlugin.Resources.FSharpScript>(@"Data\Anoter.FSharpScript.res"); }}
 		public static Duality.ContentRef<Duality.Resources.Scene> Scene_Scene { get { return Duality.ContentProvider.RequestContent<Duality.Resources.Scene>(@"Data\Scene.Scene.res"); }}
 		public static void LoadAll() {
+			Anoter_FSharpScript.MakeAvailable();
 			Scene_Scene.MakeAvailable();
 		}
 	}
