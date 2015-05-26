@@ -1,0 +1,10 @@
+System.dll
+System.Core.dll
+System.Drawing.dll
+Duality.dll
+System.Xml.Linq.dll
+FarseerDuality.dll
+plugins/ScriptingPlugin.core.dll
+OpenTK.dll
+Plugins/Flow.dll
+System.Runtime.dll

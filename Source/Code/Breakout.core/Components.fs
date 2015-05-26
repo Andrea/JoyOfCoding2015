@@ -53,7 +53,8 @@ type WinLooseConditions() =
         
             if meter.Lives <= 0 then
                 Scene.Current.FindGameObject("GameOver", false).Active <- true       
-                Scene.Current.FindGameObject("Bat", false).Active <- false            
+                Scene.Current.FindGameObject("Bat", false).Active <- false    
+                        
 (*5*)(* Add some logic to add a win condition!
 Bonus point : how do you get bonus points? 
 *)     
