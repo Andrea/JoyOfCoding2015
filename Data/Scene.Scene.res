@@ -1039,18 +1039,32 @@
             <gameobj dataType="ObjectRef">3727696575</gameobj>
             <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
           </item>
+          <item dataType="Struct" type="ScriptingPlugin.ScriptComponent" id="1181309907">
+            <_scriptPropertyValues dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.String],[System.Object]]" id="3399927395" surrogate="true">
+              <header />
+              <body />
+            </_scriptPropertyValues>
+            <_x003C_Script_x003E_k__BackingField dataType="Struct" type="Duality.ContentRef`1[[ScriptingPlugin.Resources.ScriptResourceBase]]">
+              <contentPath dataType="String">Data\Mega.FSharpScript.res</contentPath>
+            </_x003C_Script_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">3727696575</gameobj>
+            <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+          </item>
         </_items>
-        <_size dataType="Int">1</_size>
-        <_version dataType="Int">11</_version>
+        <_size dataType="Int">2</_size>
+        <_version dataType="Int">12</_version>
       </compList>
       <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="1577581240" surrogate="true">
         <header />
         <body>
           <keys dataType="Array" type="System.Type[]" id="4105115991">
             <item dataType="Type" id="2934443022" value="Breakout.Application" />
+            <item dataType="Type" id="626541386" value="ScriptingPlugin.ScriptComponent" />
           </keys>
           <values dataType="Array" type="Duality.Component[]" id="3481299392">
             <item dataType="ObjectRef">1854067074</item>
+            <item dataType="ObjectRef">1181309907</item>
           </values>
         </body>
       </compMap>

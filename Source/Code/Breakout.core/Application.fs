@@ -5,10 +5,9 @@ open Optional
 open OpenTK.Input
 open OpenTK
 
+
 type Application() = 
     inherit Component() 
-
-    // maybe set the key as a property so that we can change what key the game plays on?
 
     interface ICmpUpdatable with 
         member this.OnUpdate() =             

@@ -44,17 +44,25 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="OpenTK">
-      <HintPath>..\..\..\OpenTK.dll</HintPath>
+      <HintPath>..\..\..\..\OpenTK.dll</HintPath>
     </Reference>
     <Reference Include="ScriptingFSCorePlugin.core">
       <HintPath>..\..\..\..\Plugins\ScriptingFSCorePlugin.core.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptingPlugin.core">
+      <HintPath>..\..\..\..\Plugins\ScriptingPlugin.core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
-  </ItemGroup>  
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Media\Mega.fs">
+      <Link>Mega.fs</Link>
+    </Compile>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
