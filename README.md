@@ -39,10 +39,10 @@ There is a really good reference about duality in the [Duality Website](http://d
 
 ## Let's write some game code
 
-We are going to start off improving on the ScoreComponent, with the solution opened go to Breakout.core project and open the "components.fs" file.
+We are going to start off working  on the ScoreComponent, with the solution opened go to Breakout.core project and open the "components.fs" file.
 
 The ScoreComponent type inherits from Component (a type from Duality that is implemented in C#).
-We also have the equivalent of a read only property in C# , with a backing mutable field, not really a very functional aproach to this.
+We also have the equivalent of a read only property in C# , with a backing mutable field.
 
 ```FSharp
     member this.Score = score
