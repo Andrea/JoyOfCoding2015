@@ -37,7 +37,6 @@ type Ground() =
 
                 let meter = Scene.Current.FindComponent<LifeMeter>()
                 meter.Lives <- meter.Lives - 1
-(*4*) (*TODO: OOps!! we forgot to check if the life meter is null, make sure it isn't *)
 
                 
            

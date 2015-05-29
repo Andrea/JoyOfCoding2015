@@ -40,7 +40,7 @@ type Bat() =
                 let rightWall = Scene.Current.FindGameObject("RightWall")
                 if (this.GameObj.Transform.Pos.X + HalfWidth this.GameObj.RigidBody <= rightWall.Transform.Pos.X - HalfWidth rightWall.RigidBody) then
                     this.GameObj.Transform.MoveBy(Vector2.UnitX * 10.0f)
- (*4*)(* TODO: use active patterns to improve on thes code related to pressing the keys *)       
+ (*4*)(* TODO: use active patterns to improve on this code related to pressing the keys *)       
             
              
             if (Scene.Current.FindComponent<Ball>().BallState = BallState.FixedToBat) then
@@ -49,4 +49,4 @@ type Bat() =
 (*2*) (*TODO : The position of the ball is not really where it should be at the start of playing the game.
                It should be in the middle of the bat, the ball should be right on top of the bat. Apeace people with OCD   *)
 
-(*3*) (*TODO: find the Ball once above. *)              
+(*3*) (*TODO: find the Ball once  above. *)           

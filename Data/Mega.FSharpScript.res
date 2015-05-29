@@ -4,7 +4,8 @@
 open ScriptingPlugin
 open Duality
 open Duality.Components.Renderers
-open Duality.Resources
+open Duality.Drawing
+open Duality.Resources 
 
 type Mega() =
     inherit DualityScript()
@@ -12,7 +13,10 @@ type Mega() =
         override this.Update () =
             let changeColour (g:GameObject) =
                 g.Children
-                |&gt; Seq.iter (fun x -&gt; x.GetComponent&lt;SpriteRenderer&gt;().ColorTint &lt;- Color.Blue )
+                |&gt; Seq.iter (fun x -&gt; 
+                                let sr = x.GetComponent&lt;SpriteRenderer&gt;()
+                                sr.ColorTint &lt;- ColorRgba.Blue
+                            )
                 ()
             let m =  Scene.Current.FindGameObject("Bricks")
             match m with
